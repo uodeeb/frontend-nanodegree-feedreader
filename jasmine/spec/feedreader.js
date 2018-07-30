@@ -38,7 +38,20 @@ describe('The menu', function() {
         expect(document.body.classList).toContain('menu-hidden');
         
         }) 
+/*_________________________spec 02 _______________________*/
+it('is menu hidden when menu icon clicked', function() {
+    //selecting the icon
+   icon = document.querySelector('.menu-icon-link');
+   //check if menu do not have a hidden class onclick
+  if (icon.onclick){
+      expect(document.body.classList).not.toContain('menu-hidden')
+   //check if menu have a hidden class onclick  
+   }else{
+      expect(document.body.classList).toContain('menu-hidden')
 
+       }
+   })
+})
 
 
 
