@@ -30,6 +30,14 @@ it('has a name', function() {
     
 })
 });
+/*_________________________suite 02 _______________________*/
+describe('The menu', function() {
+    /*_________________________spec 01 _______________________*/
+    it('is menu hidden', function() {
+        //check if menu has a default of hidden
+        expect(document.body.classList).toContain('menu-hidden');
+        
+        }) 
 
 
 
