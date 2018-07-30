@@ -21,6 +21,15 @@ describe('RSS Feeds', function() {
             expect(allFeeds.url).not.toBe('');
             
         });
+/*_________________________spec 03 _______________________*/
+it('has a name', function() {
+    // check if name are defined into allfeeds
+    expect(allFeeds.keys('name')).toBeDefined();
+    // check if name is not empty
+    expect(allFeeds.name).not.toBe('');
+    
+})
+});
 
 
 
