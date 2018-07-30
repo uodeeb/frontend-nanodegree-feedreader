@@ -13,6 +13,15 @@ describe('RSS Feeds', function() {
             expect(allFeeds.length).not.toBe(0);
 
         });
+         /*_________________________spec 02 _______________________*/
+         it('has url', function() {
+            // check if url are defined into allfeeds
+            expect(allFeeds.keys('url')).toBeDefined();
+            // check if url is not empty
+            expect(allFeeds.url).not.toBe('');
+            
+        });
+
 
 
 
