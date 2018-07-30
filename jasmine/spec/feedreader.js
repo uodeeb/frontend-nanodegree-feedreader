@@ -69,26 +69,16 @@ describe('Initial Entries', function(){
         });
     
     })
+    /*_________________________suite 04 _______________________*/
+describe('New Feed Selection', function(){
+    /*_________________________spec 01 _______________________*/
+    it('loadFeed complets its work & content actually changes',function(done) {
+        // selecting the feed list to monitor content change
+        let feed = document.querySelector('.feed');
+        // check if the list content(enteries) are there
+        expect(feed.children.length).toBeGreaterThan(0);
+        done();
+    });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+})
 }());
