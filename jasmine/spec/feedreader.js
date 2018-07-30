@@ -52,6 +52,23 @@ it('is menu hidden when menu icon clicked', function() {
        }
    })
 })
+/*_________________________suite 03 _______________________*/
+describe('Initial Entries', function(){
+    /*_________________________spec 01 _______________________*/
+        // using done with beforeEach to check the asy function
+        beforeEach(function(done){
+            loadFeed(0,function(){
+                done();
+            });
+        });
+        // check if loadFeed doing its job
+        it('loadFeed complets its work',function(done) {
+        let entry = $('.feed .entry')[0];
+        expect(entry).toBeGreaterThan('');
+        done();
+        });
+    
+    })
 
 
 
