@@ -18,6 +18,13 @@ RSS feeds.
 
 *   For developers: you can find the project as a Github repository [here.](https://github.com/uodeeb/frontend-nanodegree-feedreader/)
 
+* To run this project you need:
+    - [Git](https://git-scm.com/downloads)
+    - [Node.js](https://nodejs.org/en/download/)
+    - jQuery[AJAX](http://api.jquery.com/jquery.ajax/)
+    - [NPM](https://www.npmjs.com/) Node Package manager
+    - [Jasmine](https://jasmine.github.io/index.html)
+
 * The project is formed of four test suites including seven specs:
 
     - suite one is testing the RSS feeds functionality.

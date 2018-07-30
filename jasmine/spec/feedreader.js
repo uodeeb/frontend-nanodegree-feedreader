@@ -40,16 +40,16 @@ describe('The menu', function() {
         }) 
 /*_________________________spec 02 _______________________*/
 it('is menu hidden when menu icon clicked', function() {
-    //selecting the icon
-   icon = document.querySelector('.menu-icon-link');
+    //selecting the icon click
+    $(".menu-icon-link").click();
    //check if menu do not have a hidden class onclick
-  if (icon.onclick){
       expect(document.body.classList).not.toContain('menu-hidden')
-   //check if menu have a hidden class onclick  
-   }else{
+   //selecting the icon click
+   $(".menu-icon-link").click();
+  //check if menu have a hidden class onclick  
       expect(document.body.classList).toContain('menu-hidden')
 
-       }
+       
    })
 })
 /*_________________________suite 03 _______________________*/
@@ -72,6 +72,21 @@ describe('Initial Entries', function(){
     /*_________________________suite 04 _______________________*/
 describe('New Feed Selection', function(){
     /*_________________________spec 01 _______________________*/
+    beforeEach(function(done){
+
+        loadFeed(0, function(){
+        
+            oldfeed =$('.feed').html();
+        
+            loadFeed(1, function() {
+        
+                  newFeed =$('.feed').html();       
+        
+                   done(); // call done when variables are fed and tests to begin
+              });
+         });
+        });
+
     it('loadFeed complets its work & content actually changes',function(done) {
         // selecting the feed list to monitor content change
         let feed = document.querySelector('.feed');
